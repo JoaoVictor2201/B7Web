@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #ccc;
+    align-content: flex-end; /** posicionamento de todos os elementos para quando existe mais de uma linha */
+}
+
+.container div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/**
+.div7 {
+    align-self: flex-start; /** propridade para sobrescrever o posicionamento definido
+    order: 1; /** indica em qual ordem o elemento ira aparecer, sendo sempre o numero maior o que ira ficar mais para frente, e o menor mais pra tras
+}
+*/
+   

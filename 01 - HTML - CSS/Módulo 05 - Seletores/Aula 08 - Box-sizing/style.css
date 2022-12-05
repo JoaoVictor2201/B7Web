@@ -1,0 +1,8 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 10px;
+    border: 10px solid #00ff00; /* Sem o Box sizing isso afeta no tamanho do elemento total */
+    box-sizing: border-box; /* Uitilizando o border box o elemento continua com o tamanho definido e as bordas ficam na parte interna do elemento */
+}

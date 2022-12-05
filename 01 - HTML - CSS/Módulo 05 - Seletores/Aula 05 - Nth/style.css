@@ -1,0 +1,7 @@
+div:nth-child(2) { /** Numero especifico q vc quer selecionar */
+    background-color: red;
+}
+
+div:nth-last-child(2) { /** Seleciona de baixo pra cima */
+    background-color: green;
+}

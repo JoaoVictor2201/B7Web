@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% 200px auto 100px; /* define o numero de colunas e o tamanho delas */
+    grid-template-rows: 100px 200px; /* define o tamanho das linhas, mas precisa passar os valores de acordo com a quantidade das linhas geradas pelo grid */
+    gap: 10px;
+}
+
+.item {
+    background-color: #0000FF;
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+}

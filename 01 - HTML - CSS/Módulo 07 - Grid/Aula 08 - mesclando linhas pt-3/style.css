@@ -1,0 +1,19 @@
+.container {
+    background-color: #CCCCCC;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+}
+
+.item {
+    background-color: #0000FF;
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.item1 {
+    grid-column: 1 / span 2; /* Ao invés de contar as linhas, conta os elementos */
+    grid-row: 1 / span 3; 
+}

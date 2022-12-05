@@ -1,0 +1,4 @@
+img {
+    width: max(50%, 300px); /** Seleciona o maior valor */
+    height: min(50%, 300px); /** Seleciona o menor valor */
+}

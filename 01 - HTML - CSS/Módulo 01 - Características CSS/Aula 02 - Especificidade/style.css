@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+}
+
+div {
+    color: #0000FF;
+}
+
+.container {
+    color: #FF0000; /* Mais específico então será a obedecida */
+}

@@ -1,0 +1,19 @@
+table {
+    border-spacing: 0;
+}
+
+table thead {
+    background-color: #eee;
+}
+
+table tr td {
+    border: 2px solid #ccc;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: red;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: green;
+}

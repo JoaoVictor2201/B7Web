@@ -1,0 +1,18 @@
+:root {
+    --bg-color: #000000;
+    --bg-second: #444444; /** criação de variaveis para utilização em vários lugares e facilitra a manutenção */
+    --font-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+h1 {
+    color: var(--font-color);
+}
+
+.container {
+    background-color: var(--bg-second);
+    color: var(--font-color);
+}

@@ -1,0 +1,21 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.box {
+    font-size: 2em;
+}
+
+.box-interno {
+    width: 10em; /** baseada no tamanho da FONTE do elemento pai */
+    height: 10rem; /** baseada no tamanho da FONTE do elemento root <html> */
+    background-color: #999;
+}

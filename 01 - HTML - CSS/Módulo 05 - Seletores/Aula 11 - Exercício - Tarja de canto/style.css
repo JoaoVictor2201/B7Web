@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.tarja {
+    padding: 25px 200px;
+    background-color: rgb(0, 113, 183);
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0px 0px 20px 0 black;
+    transform: rotate(315deg);
+    position: absolute;
+    left: -200px;
+    top: 100px;
+}
+
+.tarja::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 4px;
+    left: 0;
+    background-color: white;
+}
+
+.tarja::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 4px;
+    left: 0;
+    background-color: white;
+}
+
+.tarja a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}

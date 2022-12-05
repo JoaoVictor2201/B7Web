@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    display: block;
+    width: 500px;
+    height: 200px;
+    background-color: #333;
+
+    border: 5px solid;
+    border-top-color: red; /** Nome da cor */
+    border-right-color: #00FF00; /** Código Hexadecimal */
+    border-bottom-color: rgb(0, 0, 255); /** Código RGB */
+    border-left-color: rgba(255, 0, 255, 0.5); /** Código RGB com OPACIDADE */
+}

@@ -1,0 +1,13 @@
+div {
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+}
+
+div:first-child {  /** Seletor do primeiro elemento */
+    border-radius: 10px 10px 0 0;
+}
+
+div:last-child { /** Seletor do Ultimo elemento */
+    border-radius: 0 0 10px 10px;
+}

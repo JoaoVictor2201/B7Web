@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: calc(100% - 20px); /** Pega o espaço total disponível e retira 20px em qualquer resolução */
+    height: 200px;
+    background-color: #CCC;
+}

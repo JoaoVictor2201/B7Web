@@ -1,0 +1,26 @@
+span::after {
+    content: "iay";  /** pseudo elemento adicionado depois do elemento selecionado */
+}
+
+span::before {
+    content: "gluglu"; /** pseudo elemento adicionado antes do elemento selecionado */
+}
+
+.balao {
+    background-color: blue;
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.balao::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+
+    border: 20px solid;
+    border-color: transparent transparent transparent #0000FF;
+}

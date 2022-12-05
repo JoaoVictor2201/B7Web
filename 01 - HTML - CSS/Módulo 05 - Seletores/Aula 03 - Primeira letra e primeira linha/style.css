@@ -1,0 +1,7 @@
+p::first-letter {  /** Seletor da primeria letra */
+    font-size: 30px;
+    font-weight: bold;
+}
+ p::first-line {  /** Eletor da primeira linha */
+    background-color: green;
+ }

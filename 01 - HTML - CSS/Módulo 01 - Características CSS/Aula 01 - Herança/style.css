@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: calc(100% - 20px);;
+    height: 200px;
+    background-color: #ccc;
+
+    color: red;
+}
+
+.container strong {
+    color: blue; /* SE NÃO FOR ESPECIFICADO, IRA HERDAR DO PAI */
+}

@@ -1,0 +1,15 @@
+input, a {
+    display: block;
+}
+
+[required] {  /** Seleciona os elementos com o atributo required */
+    background-color: red;
+}
+
+input[type=password] {  /** Seleciona apenas os inputs que são senhas */
+    background-color: aqua;
+}
+
+a[href*="google"] { /** Seleciona links que tenham a palavra específica em alguma parte da URL */
+    background-color: green;
+}

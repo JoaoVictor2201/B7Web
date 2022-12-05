@@ -1,0 +1,3 @@
+div:empty {  /** Seletor de elemento vazio */
+    background-color: red;
+}

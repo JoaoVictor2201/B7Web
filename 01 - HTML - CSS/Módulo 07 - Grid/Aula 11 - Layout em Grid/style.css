@@ -1,0 +1,40 @@
+.container {
+    background-color: #CCCCCC;
+    display: grid;
+    gap: 10px;
+
+    grid-template-areas: 
+        "header header header header header"
+        "menu menu content content content"
+        "ad ad content content content"
+        "footer footer footer footer footer"
+    ;
+}
+
+.item {
+    background-color: #0000FF;
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: menu;
+}
+
+section {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.ad {
+    grid-area: ad;
+}

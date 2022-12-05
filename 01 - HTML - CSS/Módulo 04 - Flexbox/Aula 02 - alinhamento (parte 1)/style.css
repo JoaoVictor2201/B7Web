@@ -1,0 +1,20 @@
+.container {
+    background-color: #ccc;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /** flex-direction: row;
+    /** flex-wrap: wrap; /** Impede a regra estabelcida de tudo caber em uma linha só, permitindo os elementos terem as larguras q foram definidas e caso ultrapasse o espaço disponível vai para a linha de baixo */
+    /** flex-flow: row wrap; /** propriedade que junta o flex-direction e o flex-wrap em uma só */
+}
+
+.container div {
+    width: 100px; /** mesmo com o tamanho estourando o espaço disponível, o flex reajusta as larguras para tudo caber em uma linha só devido a condição "WRAP" */
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}

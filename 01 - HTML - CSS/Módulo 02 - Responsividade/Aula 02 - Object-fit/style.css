@@ -1,0 +1,5 @@
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /** fill: padrão, não altera nada, contain: diminui proporcionalmente para caber no espaço sem distorcer, cover: irá ocupar todo o espaço mas cortando a imagem para não distorcer, none: mantem o tamanho original e corta no tamanho definido */
+}
