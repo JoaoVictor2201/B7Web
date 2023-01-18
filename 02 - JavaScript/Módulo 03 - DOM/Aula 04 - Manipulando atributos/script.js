@@ -8,11 +8,5 @@ function Funcao() {
     password.setAttribute('type', 'text')
     password.setAttribute('placeholder', 'Tipo Alterado')
 
-    button.addEventListener('click', () => {
-        if (password.getAttribute('type') == 'text') {
-            password.setAttribute('type', 'text')
-        } else {
-            password.setAttribute('type', 'password')
-        }
-    })
+    
 }
