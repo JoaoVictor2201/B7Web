@@ -3,8 +3,9 @@ const input = document.querySelector('input');
 
 function submitTask(e) {
     if(e.code === 'Enter') {
-        const newTask = input.value;
-        ul.innerHTML += `<li>${newTask}</li>`;
+        const newTask = document.createElement('li');
+        newTask.innerHTML = input.value;
+        ul.appendChild(newTask);
         input.value = '';
     }
 }
