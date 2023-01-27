@@ -16,6 +16,13 @@ class Form {
     renderForm() {
         let formElement = document.createElement('form');
         formElement.setAttribute('method', this.method);
+        formElement.setAttribute('action', this.action);
+
+        for(let i in this.itens) {
+            this.itens[i].render(formElement);
+        }
+
+        this.container.appendChild(formElement);
     }
 
 }
@@ -42,6 +49,15 @@ class Input {
         }
     }
 
+    render(formElement) {
+        let element = document.createElement('input');
+        element.type = this.type;
+        element.name = this.name;
+        element.placeholder = this.placeholder;
+        element.required = this.required;
+        formElement.appendChild(element);
+    }
+
 }
 
 class Button extends Input {
@@ -49,6 +65,13 @@ class Button extends Input {
     constructor(placeholder) {
         super('', placeholder);
         this.type = 'submit';
+    }
+
+    render(formElement) {
+        let element = document.createElement('input');
+        element.type = this.type;
+        element.value = this.placeholder;
+        formElement.appendChild(element);
     }
 
 }
@@ -73,4 +96,4 @@ form.addItem(password);
 let button = new Button('Enviar');
 form.addItem(button);
 
-console.log(form.itens);
+form.renderForm();
