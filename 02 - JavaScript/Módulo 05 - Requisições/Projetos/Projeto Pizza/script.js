@@ -1,6 +1,8 @@
 const select = (el) => document.querySelector(el);
 const selectAll = (el) => document.querySelectorAll(el);
 let pizzaQtd = 1;
+let cart = [];
+let modalKey = 0;
 
 // Pizza Listing / Open Modal
 pizzaJson.map((item, index) => {
@@ -16,6 +18,7 @@ pizzaJson.map((item, index) => {
         e.preventDefault();
         let pizzaKey = e.target.closest('.pizza-item').getAttribute('data-pizzaKey');
         pizzaQtd = 1;
+        modalKey = pizzaKey;
         
         select('.pizzaBig img').src = pizzaJson[pizzaKey].img;
         select('.pizzaInfo h1').innerHTML = pizzaJson[pizzaKey].name;
@@ -71,4 +74,31 @@ select('.pizzaInfo--qtmenos').addEventListener('click', () => {
 select('.pizzaInfo--qtmais').addEventListener('click', () => {
     pizzaQtd++;
     select('.pizzaInfo--qt').innerHTML = pizzaQtd;
+});
+
+// Cart
+
+select('.pizzaInfo--addButton').addEventListener('click', () => {
+    const selectedSize = Number(select('.pizzaInfo--size.selected').getAttribute('data-key'));
+
+    let pizzaIdent = pizzaJson[modalKey].id + '@' + selectedSize;
+
+    let verify = cart.findIndex((item) => {
+        return item.pizzaIdent == pizzaIdent;
+    });
+
+    if(verify > -1) {
+        cart[verify].qtd += pizzaQtd;
+    } else {
+        cart.push({
+            pizzaIdent,
+            pizza : pizzaJson[modalKey].name,
+            id : pizzaJson[modalKey].id,
+            size : selectedSize,
+            qtd : pizzaQtd
+        });
+    }
+    closeModal();
+
+    console.log(cart);
 });
